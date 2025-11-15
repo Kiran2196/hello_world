@@ -3,45 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minimal</title>
     <style>
-        a {
-            display: block;
-            margin-left: 5px;
-            margin-bottom: 5px;
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #fafafa;
         }
 
-        .remember-section {
-            margin-top: 40px;
+        /* Header */
+        header {
+            padding: 20px 32px;
+            text-align: right;
+            font-size: 15px;
+            opacity: 0.6;
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Title */
+        .title {
+            margin: 55px 0 25px 90px;
+            font-size: 17px;
+            opacity: 0.75;
+        }
+
+        /* Links */
+        a {
+            display: block;
+            margin-left: 90px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #333;
+            opacity: 0.8;
+        }
+
+        a:hover {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 100px;
+            padding: 50px 20px 70px;
             text-align: center;
-            font-size: 16px;
-            line-height: 1.5;
-            font-family: Georgia, serif;
-            padding: 0 20px;
-            opacity: 0.9;
+            font-size: 14px;
+            line-height: 1.7;
+            opacity: 0.8;
+        }
+
+        footer input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 6px 4px;
+            width: 240px;
+            font-size: 14px;
+            background: transparent;
+            margin-bottom: 25px;
+            outline: none;
+            text-align: center;
+        }
+
+        footer input:focus {
+            border-bottom: 1px solid #999;
         }
     </style>
 </head>
 <body>
 
+    <!-- HEADER -->
+    <header>
+        <a href="#">About</a>
+    </header>
+
+    <!-- Title -->
+    <div class="title">
+        Please click on the links below to navigate this site.
+    </div>
+
+    <!-- LINKS -->
     <a href="https://claude.ai/public/artifacts/be82c2bb-9c83-4029-8fff-7452897bdfb5">It Just is!</a>
     <a href="https://claude.ai/public/artifacts/c940372b-990d-496f-afc2-d5268453a33d">Meditate</a>
 
-    <div class="remember-section">
-        <strong>Remember:</strong><br><br>
-        These tools cannot give you what you already are.<br>
-        They only invite pausing, questioning, noticing – not discovery, but recognition of what was never hidden.<br>
-        Not finding something new, but seeing what was always obvious.<br>
-        The tools are fingers pointing at the sun. Helpful perhaps, but not the sun itself.<br>
-        Eventually, drop the fingers.<br>
-        The sun doesn't learn to shine. It just is luminous. That's its nature.<br>
-        You are awareness.<br>
-        It just is.<br>
-        That's everything.
-    </div>
+    <!-- FOOTER -->
+    <footer>
+        <input type="email" placeholder="Your email here">
+
+        <p>
+            A place for poorly built tools and ideas that can point but never capture.
+            What they point to is impossible to bring back into language.
+            Yet I find myself contemplating anyway.
+            They help you notice what was never hidden — not discovery, but recognition.
+            Fingers pointing at the sun. Not the sun itself.
+            Eventually, drop them all. The sun doesn't learn to shine. It just shines.
+            You are awareness. It just is. That's everything.
+        </p>
+    </footer>
 
 </body>
 </html>
-
 
 
